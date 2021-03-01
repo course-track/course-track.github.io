@@ -1,0 +1,99 @@
+.logo{
+  margin-left: 2rem;
+}
+
+.landing-body{
+  width: 100%;
+  height: 100%;
+}
+
+.landing-background{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  text-align: center;
+}
+
+.landing-text{
+  float: right;
+  width: 50%;
+  height: 50vh;
+}
+
+.landing-text p{
+  margin-left: 4rem;
+}
+
+.landing-background .overlay{
+  position: absolute;
+  background-color: black;
+  width: 99%;
+  height: inherit;
+  opacity: 0.8;
+}
+
+.background-video{
+  width: 100%;
+  height: 100%;
+}
+
+.landing-background img{
+  margin: 0 1rem 0 1rem;
+  text-align: center;
+}
+
+.required-links{
+  float: left;
+}
+
+.required-links li{
+  display: inline-block;
+  list-style: none;
+  margin: 1rem 1rem 0 0;
+}
+
+.required-links li a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.required-links li a:hover{
+  color: black;
+}
+
+.social-block{
+  float: right;
+}
+
+.social-block li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 0.7rem 0 0;
+}
+
+.social-block li a {
+    height: 50px;
+    width: 50px;
+    display: block;
+    /*float: right;*/
+    color: black;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-block li a span {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    /*-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
+}
+
+.social-block li a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
