@@ -19,14 +19,22 @@
       <!--<div class="overlay"></div>-->
       <div class="landing-background">
         <div class="overlay"></div>
+        <div class="landing-text" id="landing-text">
+          <h2 class="line1">
+            <span class="text-wrapper">
+              <span class="letters">
+                Tired of browsing through multiple websites to assess a course?
+              </span>
+            </span>
+          </h2>
+          <h2 class="line2">CourseTrack is here to make finding and assessing courses easy for you!<h2>
+          <button class="entry-button">Search Courses</button>
+        </div>
         <!--<img src="background3.jpg">-->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" class="background-video">
-          <source src="background_video.mov">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" class="background-video" id="background-video">
+          <source src="backgroundvideo.mov">
         </video>
       </div>
-      <!--<div class="landing-text">
-        <p>Howdy!<p>
-      </div>-->
     </div>
 
     <div class="container">
@@ -34,7 +42,7 @@
         <ul class="required-links">
           <li><a href="#" target="_blank">Privacy Policy</a></li>
           <li><a href="#" target="_blank">Terms of Use</a></li>
-          <li><a href="#" target="_blank">Contact Us</a></li>
+          <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
         </ul>
         <ul class="social-block">
           <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
@@ -42,5 +50,24 @@
           <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
         </ul>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>
+        var video = document.getElementById('background-video');
+        video.addEventListener('ended',function(){
+            document.getElementById('landing-text').style.visibility = 'visible';
+            document.getElementById('background-video').style.visibility = 'hidden';
+        });
+
+        /*var textWrapper = document.querySelector('.line1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+          .add({
+            targets: '.line1 .letter',
+            rotateY: [-90, 0],
+            duration: 200,
+            delay: (el, i) => 30 * i,
+          });*/
+      </script>
     </div>
   </body>
