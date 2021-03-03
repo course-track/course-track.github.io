@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <div class="container">
+        <header id="site-header" class="clearfix">
+            <div class="logo-container">
+                <a class="logo" href="../index.html"><img src="../Logo.png"></img></a>
+            </div>
+            <div class="collapse navbar-container" id="nav">
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#">Search Courses</a></li>
+                    <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <hr />
+    <div id="info" align="center" style="font-family: Verdana">
+        <h3>Scheduling made easy with CoruseTrack</h3>
+        <p>Search by year, semester, college and program</p>
+        <p>Decide based on availability, rating of the professor, and grade distribution</p>
+    </div>
+
+    <!--<div style="background-image: url('background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">-->
+    <div class="form-page-body">
+        <div class="space">
+        </div>
+
+        <br>
+        <div>
+            <div class="form-body" style="font-family: Verdana" >
+                <div class="form-background">
+                    <br><br>
+                    <div class="row">
+                        <div class="col-25" class="dropdown">
+                            <label for="year">Year</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="year" id="year">
+                                <div class="dropdown-content">
+                                    <option value="none">Select Year</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </div>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="semester">Semester</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="semester" id="semester">
+                                <option value="none">Select Semester</option>
+                                <option value="fall">Fall</option>
+                                <option value="spring">Spring</option>
+                                <option value="summer">Summer</option>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="college">College/School</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="college" id="college">
+                                <option value="none">Select College</option>
+                                <option value="mays">Mays Business School</option>
+                                <option value="ce">College of Engineering</option>
+                                <option value="cals">College of Agriculture and Life Sciences</option>
+                                <option value="ca">College of Architecture</option>
+                                <option value="cd">College of Dentistry</option>
+                                <option value="cehd">College of Education & Human Development</option>
+                                <option value="cg">College of Geosciences</option>
+                                <option value="bsgps">Bush School of Government & Public Service</option>
+                                <option value="si">School of Innovation</option>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="program">Program</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="program" id="program">
+                                <option value="none">Select Program</option>
+                                <option value="msacc">MS Accounting</option>
+                                <option value="msba">MS Business</option>
+                                <option value="msmis">MS Management Information Systems</option>
+                                <option value="bbaacc">BBA Accounting</option>
+                                <option value="bbamgmt">BBA Management</option>
+                                <option value="phdacc">Ph.D. Accounting</option>
+                                <option value="phdmrk">Ph.D. Marketing</option>
+                                <option value="ftmba">Full-Time MBA</option>
+                            </select>
+                            <br><br>
+                        </div>
+
+                        <br><br>
+                        <br><br>
+                        <br><br>
+                        <div class="row">
+                            <input type="submit" value="Proceed">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <footer class="footer_section clearfix">
+        <div class="container">
+            <ul class="required-links">
+                <li><a href="#" target="_blank">Rate My Professors</a></li>
+                <li><a href="#" target="_blank">Grade Distribution</a></li>
+                <li><a href="#" target="_blank">Howdy</a></li>
+                <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
+            </ul>
+            <ul class="social-block">
+                <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+            var video = document.getElementById('background-video');
+            video.addEventListener('ended',function(){
+                document.getElementById('landing-text').style.visibility = 'visible';
+                document.getElementById('background-video').style.height = '0';
+            });
+
+            /*var textWrapper = document.querySelector('.line1 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: false})
+              .add({
+                targets: '.line1 .letter',
+                rotateY: [-90, 0],
+                duration: 200,
+                delay: (el, i) => 1000 * i,
+              });*/
+          </script>
+</body>
+</html>
