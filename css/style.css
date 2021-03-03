@@ -1,9 +1,38 @@
+.container{
+  width: 100%;
+  height: 100%;
+}
+
 header{
   background-color: white;
 }
 
+.logo-container{
+  float: left;
+}
+
 .logo{
-  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar-container{
+  float: right;
+}
+
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+
+.navbar li a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.navbar li a:hover{
+  color: #166C88;
+  border-bottom: 2px solid #166C88;
 }
 
 .landing-body{
@@ -23,10 +52,10 @@ header{
   width: 100%;
   height: 50%;
   visibility: hidden;
-  margin-top: 3rem;
+  margin-top: 5rem;
   /*transition: visibility 2s linear;*/
   animation-name: slide-up;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 4.5s;
 }
 
@@ -41,7 +70,7 @@ header{
     margin-top: 30%;
   }
   100%{
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 }
 
@@ -64,8 +93,27 @@ header{
   text-align: center;
 }
 
+footer{
+  text-align: center;
+  background-color: #166C88;
+  //#7edeff;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 .required-links{
   float: left;
+}
+
+.social-block{
+  float: right;
 }
 
 .required-links li{
@@ -75,16 +123,18 @@ header{
 }
 
 .required-links li a{
-  color: rgba(0, 0, 0, 0.5);
+  color: #7edeff;
   text-decoration: none;
 }
 
 .required-links li a:hover{
-  color: black;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .social-block{
   float: right;
+  height: 100%;
 }
 
 .social-block li{
@@ -94,12 +144,11 @@ header{
 }
 
 .social-block li a {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     display: block;
-    /*float: right;*/
     color: black;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(126, 222, 255, 0.2);
     border-radius: 50%;
     position: relative;
 }
@@ -107,21 +156,19 @@ header{
 .social-block li a span {
     position: absolute;
     font-size: 2rem;
+    color: rgba(255, 255, 255, 0.6);
     top: 50%;
     left: 50%;
-    /*-webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);*/
     transform: translate(-50%, -50%);
 }
 
-.social-block li a:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+.social-block li a:hover span{
+  color: #fff;
 }
 
 
 
-.line1 {
+/*.line1 {
   position: relative;
   font-weight: 900;
   font-size: 2rem;
@@ -139,4 +186,4 @@ header{
 .line1 .letter {
   display: inline-block;
   line-height: 1em;
-}
+}*/

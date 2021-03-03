@@ -11,8 +11,16 @@
   </head>
   <body>
     <div class="container">
-      <header id="site-header">
-        <a class="logo" href="index.html"><img src="Logo.png"></img></a>
+      <header id="site-header" class="clearfix">
+        <div class="logo-container">
+          <a class="logo" href="index.html"><img src="Logo.png"></img></a>
+        </div>
+        <div class="collapse navbar-container" id="nav">
+          <ul class="navbar">
+            <li class="nav-item"><a href="#"">Search Courses</a></li>
+            <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+          </ul>
+        </div>
       </header>
     </div>
     <div class="landing-body">
@@ -37,25 +45,27 @@
       </div>
     </div>
 
-    <div class="container">
-      <footer>
-        <ul class="required-links">
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <li><a href="#" target="_blank">Terms of Use</a></li>
-          <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
-        </ul>
-        <ul class="social-block">
-          <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
-          <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
-          <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
-        </ul>
+      <footer class="footer_section clearfix">
+        <div class="container">
+          <ul class="required-links">
+            <li><a href="#" target="_blank">Rate My Professors</a></li>
+            <li><a href="#" target="_blank">Grade Distribution</a></li>
+            <li><a href="#" target="_blank">Howdy</a></li>
+            <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
+          </ul>
+          <ul class="social-block">
+            <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+          </ul>
+        </div>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script>
         var video = document.getElementById('background-video');
         video.addEventListener('ended',function(){
             document.getElementById('landing-text').style.visibility = 'visible';
-            document.getElementById('background-video').style.visibility = 'hidden';
+            document.getElementById('background-video').style.height = '0';
         });
 
         /*var textWrapper = document.querySelector('.line1 .letters');
@@ -66,8 +76,8 @@
             targets: '.line1 .letter',
             rotateY: [-90, 0],
             duration: 200,
-            delay: (el, i) => 30 * i,
+            delay: (el, i) => 1000 * i,
           });*/
       </script>
-    </div>
   </body>
+</html>
