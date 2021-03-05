@@ -1,8 +1,12 @@
 a, p{
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: muli, "Questa", "Poppins", Arial, sans-serif;
 }
 h2{
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: muli, "Questa", "Poppins", Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+@font-face {
+    font-family: Questa;
+    src: url("../fonts/Questa/2-Questa_Regular.otf") format("opentype");
 }

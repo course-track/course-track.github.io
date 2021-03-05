@@ -1,10 +1,37 @@
+body{
+  opacity: 1;
+}
+body:before {
+  position: absolute;
+  content: "";
+  background-image: url("../background2.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+/*.overall-background{
+  position:absolute;
+  opacity: 0.1;
+  background-image: url("../background2.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}*/
+
 .container{
   width: 100%;
   height: 100%;
 }
 
 header{
-  background-color: white;
+  //background-color: white;
+  z-index: 2;
+  position: relative;
 }
 
 .logo-container{
@@ -41,11 +68,12 @@ header{
   height: 75vh;
   display: inline-block;
   text-align: center;
+  position: relative;
 }
 
 .landing-text{
   position: absolute;
-  width: 100%;
+  width: 99%;
   height: 50%;
   visibility: hidden;
   margin-top: 5rem;
@@ -53,6 +81,7 @@ header{
   animation-name: slide-up;
   animation-duration: 3s;
   animation-delay: 4.5s;
+  z-index: 2;
 }
 
 /*.landing-text .line1{
@@ -72,21 +101,16 @@ header{
 
 .landing-background .overlay{
   position: absolute;
-  background-color: white;
   width: 99%;
   height: inherit;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .background-video{
   width: 75%;
   height: 100%;
   margin: auto;
-}
-
-.landing-background img{
-  margin: 0 1rem 0 1rem;
-  text-align: center;
+  position: relative;
 }
 
 footer{
@@ -95,6 +119,8 @@ footer{
   /* #7edeff; */
   width: 100%;
   padding-bottom: 0.5em;
+  position: relative;
+  z-index: 2;
 }
 
 .clearfix:after {
@@ -106,6 +132,7 @@ footer{
 
 .required-links{
   float: left;
+  height: 100%;
 }
 
 .social-block{
@@ -197,7 +224,7 @@ footer{
   box-sizing: border-box;
   float: center;
   width: 50%;
-  height: 65vh;
+  //height: 65vh;
   display: inline-block;
   padding: 15px;
   text-align: right;
@@ -357,9 +384,11 @@ input[type=submit]:hover:enabled {
 }
 
 .form-page-body {
- background-image: url('../page 2/background.jpg');
- background-repeat: no-repeat;
- background-size: 100% 100%;
+ //background-image: url('../page 2/background.jpg');
+ //background-repeat: no-repeat;
+ //background-size: 100% 100%;
+ z-index: 2;
+ position: relative;
 }
 
 #progressBar {
