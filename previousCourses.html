@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Previous Courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+
+  <style>
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+
+    header {
+      background-color: white;
+    }
+
+    .logo-container {
+      float: left;
+    }
+
+    .logo {
+      padding-left: 2rem;
+    }
+
+    .navbar-container {
+      float: right;
+    }
+
+    .navbar li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 1rem 0 0;
+    }
+
+    .navbar li a {
+      color: rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      color: #166C88;
+      border-bottom: 2px solid #166C88;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #166C88;
+      /* #7edeff; */
+      width: 100%;
+      padding-bottom: 0.5em;
+    }
+
+    .clearfix:after {
+      content: " ";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    .required-links {
+      float: left;
+    }
+
+    .social-block {
+      float: right;
+    }
+
+    .required-links li {
+      display: inline-block;
+      list-style: none;
+      margin: 1rem 1rem 0 0;
+    }
+
+    .required-links li a {
+      /* color: #7edeff; */
+      color: white;
+      text-decoration: none;
+    }
+
+    .required-links li a:hover {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+
+    .social-block {
+      float: right;
+      height: 100%;
+    }
+
+    .social-block li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 0.7rem 0 0;
+    }
+
+    .social-block li a {
+      height: 45px;
+      width: 45px;
+      display: block;
+      color: black;
+      background-color: rgba(126, 222, 255, 0.2);
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .social-block li a span {
+      position: absolute;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.6);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .social-block li a:hover span {
+      color: #fff;
+    }
+
+    input[type=submit] {
+      /* background-color: #2ECC71; */
+      background-color: green;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      /* float: right; */
+      font-family: Verdana;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .adjust-line-height {
+      line-height: 2;
+    }
+
+    h2,
+    h3,
+    h4 {
+      font-weight: normal;
+    }
+
+    .checkboxes {
+      float: left;
+    }
+
+    .upload {
+      float: right;
+    }
+
+    .row {
+      margin-bottom: 60px;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header id="site-header" class="clearfix">
+      <div class="logo-container">
+        <a class="logo" href="index.html"><img src="Logo.png"></img></a>
+      </div>
+      <div class="collapse navbar-container" id="nav">
+        <ul class="navbar">
+          <li class="nav-item"><a href="#">Search Courses</a></li>
+          <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <hr>
+
+
+
+  <h1>Select courses taken previously</h1>
+
+
+  <div class="upload">
+
+    <h1>OR</h1> <br><br>
+    <label style="font-family:verdana;font-size:20px">Upload Transcript:</label><br>
+    <input type="file" size="70" id="myFile" name="filename">
+  </div>
+
+
+  <div class="adjust-line-height">
+
+
+    <h2><input type="checkbox" id="course1" name="course1" value="course1">
+      <label style="font-family:verdana;" for="course1"> CSCE 629: Distributed systems and cloud computing</label><br>
+      <input type="checkbox" id="course2" name="course2" value="course2">
+      <label style="font-family:verdana;" for="course2"> ISTM 631: Design and Implementaton of IS system</label><br>
+      <input type="checkbox" id="course3" name="course3" value="course3">
+      <label style="font-family:verdana;" for="course3"> STAT 624 : Big Data tools</label><br>
+      <input type="checkbox" id="course4" name="course4" value="course4">
+      <label style="font-family:verdana;" for="course4"> ISTM 628: Data Warehousing</label><br>
+      <input type="checkbox" id="course5" name="course5" value="course5">
+      <label style="font-family:verdana;" for="course5"> SCMT 611: Project management</label><br>
+      <input type="checkbox" id="course6" name="course6" value="course6">
+      <label style="font-family:verdana;" for="course6"> SJCT 532: Business Information Security</label><br>
+    </h2>
+
+  </div>
+
+
+  <div class="row">
+    <input class="enableOnInput" type="submit" value="Proceed" disabled="disabled" />
+    <input class="enableOnInput" type="button" value="Skip"/>
+  </div>
+
+  <hr>
+
+
+
+
+
+
+  <footer class="footer_section clearfix">
+    <div class="container">
+      <ul class="required-links">
+        <li><a href="#" target="_blank">Rate My Professors</a></li>
+        <li><a href="#" target="_blank">Grade Distribution</a></li>
+        <li><a href="#" target="_blank">Howdy</a></li>
+        <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
+      </ul>
+      <ul class="social-block">
+        <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+        <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+        <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
