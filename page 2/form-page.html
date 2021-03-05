@@ -8,201 +8,207 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ffy5cmp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gec2ois.css">
 </head>
 <body>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<div class="container">
-    <header id="site-header" class="clearfix">
-        <div class="logo-container">
-            <a class="logo" href="../index.html"><img src="../Logo.png"></img></a>
-        </div>
-        <div class="collapse navbar-container" id="nav">
-            <ul class="navbar">
-                <li class="nav-item"><a href="#">Search Courses</a></li>
-                <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
-            </ul>
-        </div>
-    </header>
-</div>
-
-<hr />
-<div id="info" align="center" style="font-family: Verdana;">
-    <h3>Scheduling made easy with CourseTrack</h3>
-    <p>Search by year, semester, college and program</p>
-    <p>Decide based on availability, rating of the professor, and grade distribution</p>
-</div>
-
-<!--<div style="background-image: url('background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">-->
-<div class="form-page-body">
-    <div class="space">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <div class="container">
+        <header id="site-header" class="clearfix">
+            <div class="logo-container">
+                <a class="logo" href="../index.html"><img src="../Logo.png"></img></a>
+            </div>
+            <div class="collapse navbar-container" id="nav">
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#">Search Courses</a></li>
+                    <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
     </div>
-    <br>
-    <div>
-        <div class="form-body" style="font-family: Verdana" >
-            <div class="form-background">
-                <br><br>
-                <div class="row">
-                    <div class="col-25" class="dropdown">
-                        <label for="year">Year</label>
+
+    <hr/>
+    <div id="info" align="center">
+        <h3>Scheduling made easy with CourseTrack</h3>
+        <p>Search by year, semester, college and program</p>
+        <p>Decide based on availability, rating of the professor, and grade distribution</p>
+    </div>
+
+    <!--<div style="background-image: url('background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">-->
+    <div class="form-page-body container">
+        <div class="space">
+        </div>
+
+        <br>
+        <div>
+            <div class="form-body" style="font-family: muli;" >
+                <div class="form-background">
+                    <br><br>
+                    <div class="row">
+                        <div class="col-25" class="dropdown">
+                            <label for="year" class="required">Year</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="year" id="year">
+                                <option value=" " disabled selected>Select Year</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <br><br>
+                        </div>
                     </div>
-                    <div class="col-75">
-                        <select name="year" id="year">
-                            <option value=" " disabled selected>Select Year</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                        </select>
-                        <br><br>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="semester" class="required">Semester</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="semester" id="semester" disabled>
+                                <option value=" " disabled selected>Select Semester</option>
+                                <option value="fall">Fall</option>
+                                <option value="spring">Spring</option>
+                                <option value="summer">Summer</option>
+                            </select>
+                            <br><br>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="college" class="required">College/School</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="college" id="college" disabled>
+                                <option value=" " disabled selected>Select College/School</option>
+                                <option value="mays">Mays Business School</option>
+                                <option value="ce" disabled>College of Engineering</option>
+                                <option value="cals" disabled>College of Agriculture and Life Sciences</option>
+                                <option value="ca" disabled>College of Architecture</option>
+                                <option value="cd" disabled>College of Dentistry</option>
+                                <option value="cehd" disabled>College of Education & Human Development</option>
+                                <option value="cg" disabled>College of Geosciences</option>
+                                <option value="bsgps" disabled>Bush School of Government & Public Service</option>
+                                <option value="si" disabled>School of Innovation</option>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="program" class="required">Program</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="program" id="program" disabled>
+                                <option value=" " disabled selected>Select Program</option>
+                                <option value="msacc">MS Accounting</option>
+                                <option value="msba">MS Business</option>
+                                <option value="msmis">MS Management Information Systems</option>
+                                <option value="bbaacc">BBA Accounting</option>
+                                <option value="bbamgmt">BBA Management</option>
+                                <option value="phdacc">Ph.D. Accounting</option>
+                                <option value="phdmrk">Ph.D. Marketing</option>
+                                <option value="ftmba">Full-Time MBA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br><br>
+                    <progress id='progressBar' max='100' value='0'></progress>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+                    <script>
+                                var doneA = false;
+                                $('#year').on('change', function() {
+                                    $('#semester').attr('disabled',false);
+                                    if (!doneA) {
+                                        $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
+                                        doneA = true;
+                                    }
+                                });
+
+                                var doneB = false;
+                                $('#semester').on('change', function() {
+                                    $('#college').attr('disabled',false);
+                                    if (!doneB) {
+                                        $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
+                                        doneB = true;
+                                    }
+                                });
+
+                                var doneC = false;
+                                $('#college').on('change', function() {
+                                    $('#program').attr('disabled',false);
+                                    if (!doneC) {
+                                        $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
+                                        doneC = true;
+                                    }
+                                });
+
+                                var doneD = false;
+                                $('#program').on('change', function() {
+                                    if (!doneD) {
+                                        $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
+                                        doneD = true;
+                                    }
+                                });
+                            </script>
+
+                    <br><br>
+                    <input id="enableOnInput" type="submit" value="Proceed" disabled="disabled"
+                           onclick="window.location.href='../previousCourses.html';"/>
+                    <script>
+                                var doneE = false;
+                                $('#program').on('change', function() {
+                                    if (!doneE) {
+                                        $('#enableOnInput').attr('disabled',false);
+                                        doneE = true;
+                                    }
+                                });
+                    </script>
+
+
                 </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="semester">Semester</label>
-                    </div>
-                    <div class="col-75">
-                        <select name="semester" id="semester" disabled>
-                            <option value=" " disabled selected>Select Semester</option>
-                            <option value="fall">Fall</option>
-                            <option value="spring">Spring</option>
-                            <option value="summer">Summer</option>
-                        </select>
-                        <br><br>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="college">College/School</label>
-                    </div>
-                    <div class="col-75">
-                        <select name="college" id="college" disabled>
-                            <option value=" " disabled selected>Select College</option>
-                            <option value="mays">Mays Business School</option>
-                            <option value="ce" disabled>College of Engineering</option>
-                            <option value="cals" disabled>College of Agriculture and Life Sciences</option>
-                            <option value="ca" disabled>College of Architecture</option>
-                            <option value="cd" disabled>College of Dentistry</option>
-                            <option value="cehd" disabled>College of Education & Human Development</option>
-                            <option value="cg" disabled>College of Geosciences</option>
-                            <option value="bsgps" disabled>Bush School of Government & Public Service</option>
-                            <option value="si" disabled>School of Innovation</option>
-                        </select>
-                        <br><br>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="program">Program</label>
-                    </div>
-                    <div class="col-75">
-                        <select name="program" id="program" disabled>
-                            <option value=" " disabled selected>Select Program</option>
-                            <option value="msacc">MS Accounting</option>
-                            <option value="msba">MS Business</option>
-                            <option value="msmis">MS Management Information Systems</option>
-                            <option value="bbaacc">BBA Accounting</option>
-                            <option value="bbamgmt">BBA Management</option>
-                            <option value="phdacc">Ph.D. Accounting</option>
-                            <option value="phdmrk">Ph.D. Marketing</option>
-                            <option value="ftmba">Full-Time MBA</option>
-                        </select>
-                    </div>
-                </div>
-                <br><br>
-                <progress id='progressBar' max='100' value='0'></progress>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                <script src="~/Scripts/jquery-1.12.4.min.js"></script>
-                <script>
-                            var doneA = false;
-                            $('#year').on('change', function() {
-                                $('#semester').attr('disabled',false);
-                                if (!doneA) {
-                                    $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
-                                    doneA = true;
-                                }
-                            });
-
-                            var doneB = false;
-                            $('#semester').on('change', function() {
-                                $('#college').attr('disabled',false);
-                                if (!doneB) {
-                                    $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
-                                    doneB = true;
-                                }
-                            });
-
-                            var doneC = false;
-                            $('#college').on('change', function() {
-                                $('#program').attr('disabled',false);
-                                if (!doneC) {
-                                    $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
-                                    doneC = true;
-                                }
-                            });
-
-                            var doneD = false;
-                            $('#program').on('change', function() {
-                                if (!doneD) {
-                                    $("#progressBar").attr('value', $("#progressBar").prop('value')+25);
-                                    doneD = true;
-                                }
-                            });
-                        </script>
-
-                <br><br>
-                <input id="enableOnInput" type="submit" value="Proceed" disabled="disabled"
-                       onclick="window.location.href='../previousCourses.html';"/>
-                <script>
-                            var doneE = false;
-                            $('#program').on('change', function() {
-                                if (!doneE) {
-                                    $('#enableOnInput').attr('disabled',false);
-                                    doneE = true;
-                                }
-                            });
-                </script>
             </div>
         </div>
     </div>
-</div>
-<!--<br><br><br><br>-->
-<footer class="footer_section clearfix">
-    <div class="container">
-        <ul class="required-links">
-            <li><a href="#" target="_blank">Rate My Professors</a></li>
-            <li><a href="#" target="_blank">Grade Distribution</a></li>
-            <li><a href="#" target="_blank">Howdy</a></li>
-            <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
-        </ul>
-        <ul class="social-block">
-            <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
-            <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
-            <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
-        </ul>
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script>
-            var video = document.getElementById('background-video');
-            video.addEventListener('ended',function(){
-                document.getElementById('landing-text').style.visibility = 'visible';
-                document.getElementById('background-video').style.height = '0';
-            });
 
-            /*var textWrapper = document.querySelector('.line1 .letters');
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    <br><br><br><br>
+    <footer class="footer_section clearfix">
+        <div class="container">
+            <ul class="required-links">
+                <li><a href="#" target="_blank">Rate My Professors</a></li>
+                <li><a href="#" target="_blank">Grade Distribution</a></li>
+                <li><a href="#" target="_blank">Howdy</a></li>
+                <li><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
+            </ul>
+            <ul class="social-block">
+                <li><a href="#" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+                <li><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+                var video = document.getElementById('background-video');
+                video.addEventListener('ended',function(){
+                    document.getElementById('landing-text').style.visibility = 'visible';
+                    document.getElementById('background-video').style.height = '0';
+                });
 
-            anime.timeline({loop: false})
-              .add({
-                targets: '.line1 .letter',
-                rotateY: [-90, 0],
-                duration: 200,
-                delay: (el, i) => 1000 * i,
-              });*/
-          </script>
+                /*var textWrapper = document.querySelector('.line1 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                anime.timeline({loop: false})
+                  .add({
+                    targets: '.line1 .letter',
+                    rotateY: [-90, 0],
+                    duration: 200,
+                    delay: (el, i) => 1000 * i,
+                  });*/
+              </script>
 </body>
 </html>

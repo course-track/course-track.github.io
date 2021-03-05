@@ -1,8 +1,8 @@
 a, p{
-  font-family: muli, "Questa", "Poppins", Arial, sans-serif;
+  font-family: muli, sans-serif;
 }
-h2{
-  font-family: muli, "Questa", "Poppins", Arial, sans-serif;
+h2,h3{
+  font-family: muli, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
