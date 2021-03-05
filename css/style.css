@@ -11,10 +11,6 @@ header{
   float: left;
 }
 
-.logo{
-  padding-left: 2rem;
-}
-
 .navbar-container{
   float: right;
 }
@@ -340,6 +336,20 @@ input[type=submit]:hover:enabled {
 
 .dropdown-content {
   display: block;
+}
+
+.search-button{
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Verdana;
+}
+
+.search-button:hover{
+  background-color: #45a049;
 }
 
 #info {
