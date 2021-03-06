@@ -26,6 +26,13 @@ body .overall_background{
   width: 100%;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container{
   width: 100%;
   height: 100%;
@@ -62,24 +69,24 @@ header{
 .landing-body{
   width: 99%;
   min-height: 100%;
-}
-
-.landing-background{
-  width: 99%;
-  height: 100%;
   display: inline-block;
   text-align: center;
 }
 
+/*.landing-background{
+  width: 99%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}*/
+
 .landing-text{
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 50%;
-  visibility: hidden;
-  margin-top: 5rem;
+  display: none;
   animation-name: slide-up;
   animation-duration: 3s;
-  animation-delay: 4.5s;
 }
 
 /*.landing-text .line1{
@@ -93,7 +100,7 @@ header{
     margin-top: 10%;
   }
   100%{
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 
@@ -103,18 +110,13 @@ header{
   margin: auto;
 }
 
-.landing-background img{
-  margin: 0 1rem 0 1rem;
-  text-align: center;
-}
-
 footer {
   text-align: center;
   background-color: #166C88;
   /* #7edeff; */
   width: 100%;
   padding-bottom: 0.5em;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   display: block;
   bottom: 0;
