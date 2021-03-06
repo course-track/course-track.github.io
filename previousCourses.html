@@ -12,14 +12,19 @@
   <link rel="stylesheet" href="https://use.typekit.net/ffy5cmp.css">
   <link rel="stylesheet" href="https://use.typekit.net/gec2ois.css">
 
+
+
   <style>
     .container {
       width: 100%;
       height: 100%;
     }
+    .container-prev-courselist{
+      display: flex;
+    }
 
     header {
-      background-color: white;
+      position: relative;
     }
 
     .logo-container {
@@ -52,6 +57,7 @@
       /* #7edeff; */
       width: 100%;
       padding-bottom: 0.5em;
+      position: absolute;
     }
 
     .clearfix:after {
@@ -121,7 +127,6 @@
     }
 
     input[type=submit] {
-      /* background-color: #2ECC71; */
       background-color: green;
       color: white;
       padding: 12px 20px;
@@ -135,7 +140,8 @@
     input[type=submit]:hover {
       background-color: #45a049;
     }
-    .button{
+
+    .button {
       padding: 12px 20px;
       border: none;
       border-radius: 4px;
@@ -163,9 +169,13 @@
       margin-bottom: 60px;
       text-align: right;
     }
-    #header1{
+
+    #header1 {
       color: maroon;
     }
+
+
+
 
     /* .form-page-body {
  background-image: url('page 2/background.jpg');
@@ -173,8 +183,57 @@
  background-size: 100% 100%;
  opacity: 0.2;
 } */
+    .inputDnD .form-control-file {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 15em;
+      outline: none;
+      visibility: hidden;
+      cursor: pointer;
+      background-color: #c61c23;
+      box-shadow: 0 0 5px solid currentColor;
+    }
 
+    .inputDnD .form-control-file:before {
+      content: attr(data-title);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      min-height: 15em;
+      line-height: 2em;
+      padding-top: 1.5em;
+      opacity: 1;
+      visibility: visible;
+      text-align: center;
+      border: 2px solid;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+    }
+
+    .inputDnD .form-control-file:hover:before {
+      border-style: solid;
+      box-shadow: inset 0px 0px 0px 0.25em currentColor;
+    }
+
+    body {
+      background-color: #f7f7f9;
+    }
+
+    .PreviousButton{
+      display: block;
+    }
+    
+    body .overall_background{
+  background-image: url("background2.jpg");
+  background-size: cover;
+  opacity: 0.15;
+  position: absolute;
+  height: 100%;
+  width: 99%;
+}
   </style>
+
 </head>
 
 <body>
@@ -194,50 +253,61 @@
   </div>
   <hr>
 
+  <div class = "container">
 
-<div class="container">
-  <h1><label id = "header1"> Select all courses taken previously</label></h1>
-  <div class="form-page-body">
+  <div class="container-prev-courselist">
+    
+      <div class="adjust-line-height col-sm-8">
 
-  <div class="upload col-md-4">
+        <h1><label id="header1"> Select all courses taken previously</label></h1>
+        <h3><input type="checkbox" id="course1" name="course1" value="course1">
+          <label style="font-family:verdana;" for="course1"> CSCE 629: Distributed systems and cloud
+            computing</label><br>
+          <input type="checkbox" id="course2" name="course2" value="course2">
+          <label style="font-family:verdana;" for="course2"> ISTM 631: Design and Implementaton of IS Systems</label><br>
+          <input type="checkbox" id="course3" name="course3" value="course3">
+          <label style="font-family:verdana;" for="course3"> STAT 624 : Big Data tools</label><br>
+          <input type="checkbox" id="course4" name="course4" value="course4">
+          <label style="font-family:verdana;" for="course4"> ISTM 628: Data Warehousing</label><br>
+          <input type="checkbox" id="course5" name="course5" value="course5">
+          <label style="font-family:verdana;" for="course5"> SCMT 611: Project management</label><br>
+          <input type="checkbox" id="course6" name="course6" value="course6">
+          <label style="font-family:verdana;" for="course6"> SJCT 532: Business Information Security</label><br>
+        </h3>
 
-    <h1><label id = "header1">OR</label></h1> <br><br>
-    <label style="font-family:verdana;font-size:20px">Upload Transcript:</label><br>
-    <input type="file" size="70" id="myFile" name="filename">
-  </div>
+      </div>
+      <!-- <div class = "col-md-2">hag</div> -->
+      <div class="col-sm-4" style="margin-bottom: -5px">
 
+        <h1><label id="header1">OR</label></h1> <br>
 
-  <div class="adjust-line-height col-md-8">
-
-
-    <h3><input type="checkbox" id="course1" name="course1" value="course1">
-      <label style="font-family:verdana;" for="course1"> CSCE 629: Distributed systems and cloud computing</label><br>
-      <input type="checkbox" id="course2" name="course2" value="course2">
-      <label style="font-family:verdana;" for="course2"> ISTM 631: Design and Implementaton of IS system</label><br>
-      <input type="checkbox" id="course3" name="course3" value="course3">
-      <label style="font-family:verdana;" for="course3"> STAT 624 : Big Data tools</label><br>
-      <input type="checkbox" id="course4" name="course4" value="course4">
-      <label style="font-family:verdana;" for="course4"> ISTM 628: Data Warehousing</label><br>
-      <input type="checkbox" id="course5" name="course5" value="course5">
-      <label style="font-family:verdana;" for="course5"> SCMT 611: Project management</label><br>
-      <input type="checkbox" id="course6" name="course6" value="course6">
-      <label style="font-family:verdana;" for="course6"> SJCT 532: Business Information Security</label><br>
-    </h3>
-
-  </div>
-
-
-  <div class="row container">
-    <input class="enableOnInput" type="submit" value="Proceed" disabled="disabled" />
-    <input class="button" type="button" value="Skip"/>
-  </div>
-
-  <hr>
-
-  </div>
-</div>
+        <div class="row">
+          <label style="font-family:verdana;font-size:20px">Upload Transcript:</label><br>
+          <button type="button" style="margin-bottom: 10px;" class="btn btn-primary btn-block"
+            onclick="document.getElementById('inputFile').click()">Add file</button>
 
 
+
+          <div class="inputDnD">
+
+            <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile"
+              onchange="readUrl(this)" data-title="Drag and drop a file">
+          </div>
+          <label >Don't have a transcript? <a href="https://howdy.tamu.edu/uPortal/p/TAMU-APP-Launcher.ctf3/detached/render.uP?pCm=view&pP_targetEndpoint=bwskotrn.P_ViewTermTran" >Click here</a></label>
+        </div>
+      </div>
+    </div>
+  
+
+      <div class="row container PreviousButton">
+        <input class="enableOnInput" type="submit" value="Proceed" disabled="disabled" />
+        <input class="button" type="button" value="Skip" />
+        
+      </div>
+
+      <hr>
+    
+    </div>
 
   <footer class="footer_section clearfix">
     <div class="container">
@@ -254,5 +324,8 @@
       </ul>
     </div>
   </footer>
+
+
+  <script src="js/main.js"></script>
 
 </body>
