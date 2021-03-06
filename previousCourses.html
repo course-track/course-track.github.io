@@ -58,6 +58,9 @@
       width: 100%;
       padding-bottom: 0.5em;
       position: absolute;
+      display: block;
+      bottom: 0;
+      overflow: hidden;
     }
 
     .clearfix:after {
@@ -134,7 +137,7 @@
       border-radius: 4px;
       cursor: pointer;
       /* float: right; */
-      font-family: Verdana;
+      font-family: muli;
     }
 
     input[type=submit]:hover {
@@ -151,7 +154,6 @@
       line-height: 2;
     }
 
-    h2,
     h3,
     h4 {
       font-weight: normal;
@@ -170,11 +172,9 @@
       text-align: right;
     }
 
-    #header1 {
-      color: maroon;
+    #header1{
+      font-family: muli;
     }
-
-
 
 
     /* .form-page-body {
@@ -223,7 +223,7 @@
     .PreviousButton{
       display: block;
     }
-    
+
     body .overall_background{
   background-image: url("background2.jpg");
   background-size: cover;
@@ -256,24 +256,23 @@
   <div class = "container">
 
   <div class="container-prev-courselist">
-    
+
       <div class="adjust-line-height col-sm-8">
 
-        <h1><label id="header1"> Select all courses taken previously</label></h1>
-        <h3><input type="checkbox" id="course1" name="course1" value="course1">
-          <label style="font-family:verdana;" for="course1"> CSCE 629: Distributed systems and cloud
+        <h2>Select all courses taken previously</h2>
+        <input type="checkbox" id="course1" name="course1" value="course1">
+          <label style="font-family:muli;" for="course1"> CSCE 629: Distributed systems and cloud
             computing</label><br>
           <input type="checkbox" id="course2" name="course2" value="course2">
-          <label style="font-family:verdana;" for="course2"> ISTM 631: Design and Implementaton of IS Systems</label><br>
+          <label style="font-family:muli;" for="course2"> ISTM 631: Design and Implementaton of IS Systems</label><br>
           <input type="checkbox" id="course3" name="course3" value="course3">
-          <label style="font-family:verdana;" for="course3"> STAT 624 : Big Data tools</label><br>
+          <label style="font-family:muli;" for="course3"> STAT 624 : Big Data tools</label><br>
           <input type="checkbox" id="course4" name="course4" value="course4">
-          <label style="font-family:verdana;" for="course4"> ISTM 628: Data Warehousing</label><br>
+          <label style="font-family:muli;" for="course4"> ISTM 628: Data Warehousing</label><br>
           <input type="checkbox" id="course5" name="course5" value="course5">
-          <label style="font-family:verdana;" for="course5"> SCMT 611: Project management</label><br>
+          <label style="font-family:muli;" for="course5"> SCMT 611: Project management</label><br>
           <input type="checkbox" id="course6" name="course6" value="course6">
-          <label style="font-family:verdana;" for="course6"> SJCT 532: Business Information Security</label><br>
-        </h3>
+          <label style="font-family:muli;" for="course6"> SJCT 532: Business Information Security</label><br>
 
       </div>
       <!-- <div class = "col-md-2">hag</div> -->
@@ -282,7 +281,7 @@
         <h1><label id="header1">OR</label></h1> <br>
 
         <div class="row">
-          <label style="font-family:verdana;font-size:20px">Upload Transcript:</label><br>
+          <label style="font-family:muli;font-size:20px">Upload Transcript:</label><br>
           <button type="button" style="margin-bottom: 10px;" class="btn btn-primary btn-block"
             onclick="document.getElementById('inputFile').click()">Add file</button>
 
@@ -297,16 +296,14 @@
         </div>
       </div>
     </div>
-  
+
 
       <div class="row container PreviousButton">
         <input class="enableOnInput" type="submit" value="Proceed" disabled="disabled" />
         <input class="button" type="button" value="Skip" />
-        
+
       </div>
 
-      <hr>
-    
     </div>
 
   <footer class="footer_section clearfix">
