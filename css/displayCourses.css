@@ -16,24 +16,12 @@
     position: relative;
   }
 
-  @media(min-width: 510px){
-    .logo-container{
-      float: left;
-    }
-
-    .navbar-container{
-      float: right;
-    }
+  .logo-container {
+    float: left;
   }
 
-  @media(max-width: 510px){
-    .logo-container{
-      text-align: center;
-    }
-
-    .navbar-container{
-      text-align: center;
-    }
+  .navbar-container {
+    float: right;
   }
 
   .navbar li {
@@ -76,29 +64,14 @@
     display: block;
     height: 0;
     clear: both;
-    overflow: hidden;
   }
 
-  @media (min-width: 1024px){
-    .required-links{
-      float: left;
-    }
-
-    .social-block{
-      float: right;
-    }
+  .required-links {
+    float: left;
   }
 
-  @media (max-width: 1024px) {
-    .required-links{
-      float: none;
-      padding-inline-start: 10px;
-    }
-
-    .social-block{
-      float: none;
-      padding-inline-start: 10px;
-    }
+  .social-block {
+    float: right;
   }
 
   .required-links li {
@@ -116,6 +89,11 @@
   .required-links li a:hover {
     color: white;
     border-bottom: 1px solid white;
+  }
+
+  .social-block {
+    float: right;
+    height: 100%;
   }
 
   .social-block li {
@@ -259,25 +237,102 @@ opacity: 0.2;
     width: 99%;
   }
 
-  #requiredCourses {
+  #requiredCourses1 {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
 
-  #requiredCourses td, #requiredCourses th {
+  #requiredCourses1 td, #requiredCourses1 th {
     border: 1px solid #ddd;
     padding: 8px;
   }
 
-  #requiredCourses tr:nth-child(even){background-color: #f2f2f2;}
+  #requiredCourses1 tr:nth-child(even){background-color: #f2f2f2;}
 
-  #requiredCourses tr:hover {background-color: #ddd;}
+  #requiredCourses1 tr:hover {background-color: #ddd;}
 
-  #requiredCourses th {
+  #requiredCourses1 th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #4CAF50;
     color: white;
   }
+
+    #electiveCourses1 {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #electiveCourses1 td, #electiveCourses1 th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #electiveCourses1 tr:nth-child(even){background-color: #f2f2f2;}
+
+    #electiveCourses1 tr:hover {background-color: #ddd;}
+
+    #electiveCourses1 th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+  #goodGrade {
+        align-self: center;
+        background: #82E0AA;
+        height: 64px;
+        line-height: 36px;
+        margin-bottom: 8px;
+        padding: 12px 10px;
+        width: 72px;
+        font-size: 20px;
+        font-weight: 900;
+  }
+
+  #goodGrade:hover {
+    cursor: pointer;
+  }
+
+
+  #avgGrade {
+      align-self: center;
+      background: #EEE380;
+      height: 64px;
+      line-height: 36px;
+      margin-bottom: 8px;
+      padding: 12px 10px;
+      width: 72px;
+      font-size: 20px;
+      font-weight: 900;
+}
+
+  #avgGrade:hover {
+    cursor: pointer;
+  }
+
+
+  #lowGrade {
+      align-self: center;
+      background: #EE8280;
+      height: 64px;
+      line-height: 36px;
+      margin-bottom: 8px;
+      padding: 12px 10px;
+      width: 72px;
+      font-size: 20px;
+      font-weight: 900;
+}
+
+  #lowGrade:hover {
+    cursor: pointer;
+  }
+
+.rating:hover {
+    cursor: pointer;
+}
