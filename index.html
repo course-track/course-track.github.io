@@ -28,25 +28,25 @@
           </div>
         </header>
       </div>
-      <div class="landing-body">
-          <div class="landing-text" id="landing-text">
-            <h2 class="line1">
-              <span class="text-wrapper">
-                <span class="letters">
-                  Tired of opening countless tabs to assess a course for your program?
-                </span>
+      <div class="landing-body container">
+          <h2 class="line1" id="line1">
+            <span class="text-wrapper">
+              <span class="letters">
+                Tired of opening countless tabs to find and check details of a course for your program?
               </span>
-            </h2>
-            <br>
-            <h2 class="line2">CourseTrack is here to make finding and assessing courses easy for you!<h2>
-            <br>
+            </span>
+          </h2>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" class="background-video" id="background-video">
+            <source src="background3.mov">
+          </video>
+          <div class='landing-slidable' id="landing-slidable">
+            <h2 class="line2" id='line2'>CourseTrack is here to make finding course details easy for you!<h2>
+            <h2 class="line2" id='line2'>Here, you can find your specific courselist by entering details about your school, program and semester.<h2>
+            <h2 class="line2" id='line2'>Moreover, you can get an even more curated courselist by providing details about courses you've previously taken!<h2>
             <br>
             <button class="search-button" onclick="window.location.href='page 2/form-page.html';">Search Courses</button>
           </div>
           <!--<img src="background3.jpg">-->
-          <video playsinline="playsinline" autoplay="autoplay" muted="muted" class="background-video" id="background-video">
-            <source src="background.mov">
-          </video>
       </div>
 
         <footer class="footer_section clearfix">
@@ -69,8 +69,9 @@
       <script>
         var video = document.getElementById('background-video');
         video.addEventListener('ended',function(){
-            document.getElementById('landing-text').style.display = 'block';
+            document.getElementById('landing-slidable').style.display = 'block';
             document.getElementById('background-video').style.display = 'none';
+            document.getElementById('line1').style.display = 'none';
         });
 
         /*var textWrapper = document.querySelector('.line1 .letters');

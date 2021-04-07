@@ -16,12 +16,24 @@
     position: relative;
   }
 
-  .logo-container {
-    float: left;
+  @media(min-width: 510px){
+    .logo-container{
+      float: left;
+    }
+
+    .navbar-container{
+      float: right;
+    }
   }
 
-  .navbar-container {
-    float: right;
+  @media(max-width: 510px){
+    .logo-container{
+      text-align: center;
+    }
+
+    .navbar-container{
+      text-align: center;
+    }
   }
 
   .navbar li {
@@ -64,14 +76,29 @@
     display: block;
     height: 0;
     clear: both;
+    overflow: hidden;
   }
 
-  .required-links {
-    float: left;
+  @media (min-width: 1024px){
+    .required-links{
+      float: left;
+    }
+
+    .social-block{
+      float: right;
+    }
   }
 
-  .social-block {
-    float: right;
+  @media (max-width: 1024px) {
+    .required-links{
+      float: none;
+      padding-inline-start: 10px;
+    }
+
+    .social-block{
+      float: none;
+      padding-inline-start: 10px;
+    }
   }
 
   .required-links li {
@@ -89,11 +116,6 @@
   .required-links li a:hover {
     color: white;
     border-bottom: 1px solid white;
-  }
-
-  .social-block {
-    float: right;
-    height: 100%;
   }
 
   .social-block li {
@@ -235,23 +257,23 @@ opacity: 0.2;
     position: absolute;
     height: 100%;
     width: 99%;
-  }  
+  }
 
   #requiredCourses {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
-  
+
   #requiredCourses td, #requiredCourses th {
     border: 1px solid #ddd;
     padding: 8px;
   }
-  
+
   #requiredCourses tr:nth-child(even){background-color: #f2f2f2;}
-  
+
   #requiredCourses tr:hover {background-color: #ddd;}
-  
+
   #requiredCourses th {
     padding-top: 12px;
     padding-bottom: 12px;
