@@ -248,7 +248,7 @@ opacity: 0.2;
     padding: 8px;
   }
 
-  #requiredCourses1 tr:nth-child(even){background-color: #f2f2f2;}
+  #requiredCourses1 tr {background-color: #f2f2f2;}
 
   #requiredCourses1 tr:hover {background-color: #ddd;}
 
@@ -271,7 +271,7 @@ opacity: 0.2;
       padding: 8px;
     }
 
-    #electiveCourses1 tr:nth-child(even){background-color: #f2f2f2;}
+    #electiveCourses1 tr {background-color: #f2f2f2;}
 
     #electiveCourses1 tr:hover {background-color: #ddd;}
 
