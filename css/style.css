@@ -321,12 +321,9 @@ footer {
 
 .form-body{
     box-sizing: border-box;
-    width: 60%;
     height: 100%;
-    left: 20%;
-    /*padding-top: 5px;
-
-    padding-left: 100px;*/
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 20px;
     padding-bottom: 60px;
     position: relative;
@@ -334,6 +331,24 @@ footer {
     /*box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.5);*/
     background-color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.5);
+}
+
+@media(min-width: 992px){
+  .form-body{
+    width: 60%;
+  }
+}
+
+@media(max-width: 991px){
+  .form-body{
+    width: 80%;
+  }
+}
+
+@media(max-width: 767px){
+  .form-body{
+    width: 100%;
+  }
 }
 
 /*.form-text{
@@ -399,9 +414,24 @@ label {
     padding: 12px 12px 12px 0;
     display: inline-block;
     font-size: 1rem;
-    width: 75%;
+    width: 100%;
     font-weight: 750;
     word-wrap:break-word;
+}
+
+@media(max-width: 768px){
+  label{
+    text-align: center;
+  }
+
+  .form_fields{
+    text-align: center;
+  }
+  
+  select{
+    width: 75%;
+  }
+
 }
 
 input[type=submit]:disabled {
