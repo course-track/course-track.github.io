@@ -13,21 +13,17 @@
     <link rel="stylesheet" href="https://use.typekit.net/gec2ois.css">
     <link rel="stylesheet" href="css/displayCourses.css">
     <link rel="stylesheet" href="css/circle.css">
-
-
-    <style>
-            body .overall_background{
-                background-image: url("background2.jpg");
-                background-size: cover;
-                opacity: 0.15;
-                position: absolute;
-                height: 100%;
-                width: 99%;
-              }
-        </style>
 </head>
-
-<body onload='hola()'>
+<style>
+  body .overall_background{
+    background-color: #e5eaf2;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+<body>
 
 <div class="overall_background"></div>
 <div class="flex-wrapper">
@@ -38,8 +34,8 @@
             </div>
             <div class="collapse navbar-container" id="nav">
                 <ul class="navbar">
-                    <li class="nav-item"><a href="#">Search Courses</a></li>
-                    <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+                    <li class="nav-item"><a href="page 2/form-page.html">Search Courses</a></li>
+                    <li class="nav-item"><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
                 </ul>
             </div>
         </header>
@@ -48,13 +44,14 @@
     <div class = "container">
         <div class="container-prev-courselist">
 
-            <div class="adjust-line-height col-sm-9">
+            <div class="adjust-line-height col-lg-12 col-md-12 col-sm-12">
 
                 <h2>Required Department Courses</h2>
                 <table id="requiredCourses1">
                     <tr>
                         <th>Course</th>
                         <th>Professor</th>
+                        <th>Meeting Times</th>
                         <th>Professor Rating</th>
                         <th>Avg. Past Grade</th>
                     </tr>
@@ -62,6 +59,7 @@
                         <td><input type="checkbox" id="course1" name="course1" value="course1">
                             <label style="font-family:muli;" for="course1"> ISTM 643: Corporate Information Planning</label><br></td>
                         <td><label style="font-family:muli;" for="course1"> Thomas Jamieson </label></td>
+                        <td><label style="font-family:muli;" for="course1">Offered Remote Only </label></td>
                         <td>
                             <div class="c100 p76 small" >
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2026607&showMyProfs=true.html';">3.8</span>
@@ -79,6 +77,10 @@
                             <label style="font-family:muli;" for="course2"> ISTM 635: Business Information Security</label><br></td>
                         <td><label style="font-family:muli;" for="course2"> Ravi Sen </label></td>
                         <td>
+                          <label style="font-family:muli;" for="course2">Tue, Thur</label><br>
+                          <label style="font-family:muli;" for="course2">05:00 PM - 06:15 PM</label>
+                        </td>
+                        <td>
                             <div class="c100 p40 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1465033&showMyProfs=true.html';">2</span>
                                 <div class="slice">
@@ -94,6 +96,10 @@
                         <td> <input type="checkbox" id="course3" name="course3" value="course3">
                             <label style="font-family:muli;" for="course3"> ISTM 601: Fundamentals of Business Programming</label><br></td>
                         <td><label style="font-family:muli;" for="course3"> Theresa Phinney</label></td>
+                        <td>
+                          <label style="font-family:muli;" for="course2">Mon, Wed</label><br>
+                          <label style="font-family:muli;" for="course2">08:15 AM - 09:30 AM</label>
+                        </td>
                         <td>
                             <div class="c100 p68 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1846207&showMyProfs=true.html';">3.4</span>
@@ -111,6 +117,10 @@
                             <label style="font-family:muli;" for="course4"> ISTM 615: Business Database Systems</label><br></td>
                         <td><label style="font-family:muli;" for="course4"> Jon Jasperson</label></td>
                         <td>
+                          <label style="font-family:muli;" for="course2">Mon, Wed, Fri</label><br>
+                          <label style="font-family:muli;" for="course2">01:00 PM - 01:50 PM</label>
+                        </td>
+                        <td>
                             <div class="c100 p74 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2442440&showMyProfs=true.html';">3.7</span>
                                 <div class="slice">
@@ -127,6 +137,10 @@
                             <label style="font-family:muli;" for="course5"> ISTM 630: Project Management</label><br></td>
                         <td><label style="font-family:muli;" for="course5"> Dwayne Whitten </label></td>
                         <td>
+                          <label style="font-family:muli;" for="course2">Tue, Thur</label><br>
+                          <label style="font-family:muli;" for="course2">12:00 PM - 01:15 PM</label>
+                        </td>
+                        <td>
                             <div class="c100 p50 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2125947&showMyProfs=true.html';">2.5</span>
                                 <div class="slice">
@@ -141,12 +155,13 @@
                 </table>
             </div>
 
-            <div class="adjust-line-height col-sm-9">
+            <div class="adjust-line-height col-lg-12 col-md-12 col-sm-12">
                 <h2>Elective Courses</h2>
                 <table id="electiveCourses1">
                     <tr>
                         <th>Course</th>
                         <th>Professor</th>
+                        <th>Meeting Times</th>
                         <th>Professor Rating</th>
                         <th>Avg. Past Grade</th>
                     </tr>
@@ -155,6 +170,10 @@
                         <td><input type="checkbox" id="elective1" name="elective1" value="elective1">
                             <label style="font-family:muli;" for="course2"> CSCE 666: Pattern Analysis</label><br></td>
                         <td><label style="font-family:muli;" for="course2"> Ricardo Gutierrez-Osuna</label></td>
+                        <td>
+                          <label style="font-family:muli;" for="course2">Tue, Thur</label><br>
+                          <label style="font-family:muli;" for="course2">12:00 PM - 01:15 PM</label>
+                        </td>
                         <td>
                             <div class="c100 p38 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1077643&showMyProfs=true.html';">1.9</span>
@@ -172,6 +191,10 @@
                             <label style="font-family:muli;" for="course3"> STAT 608 : Regression Analysis</label><br></td>
                         <td><label style="font-family:muli;" for="course3"> Mohamed Aburweis</label></td>
                         <td>
+                          <label style="font-family:muli;" for="course2">Mon, Wed, Fri</label><br>
+                          <label style="font-family:muli;" for="course2">01:00 PM - 01:50 PM</label>
+                        </td>
+                        <td>
                             <div class="c100 p60 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2649291&showMyProfs=true.html';">3</span>
                                 <div class="slice">
@@ -188,6 +211,9 @@
                             <label style="font-family:muli;" for="course4">ACCT 646: International Accounting</label><br></td>
                         <td><label style="font-family:muli;" for="course4">Kayla Cline</label></td>
                         <td>
+                          <label style="font-family:muli;" for="course2">Offered Remote Only</label><br>
+                        </td>
+                        <td>
                             <div class="c100 p80 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2128478&showMyProfs=true.html';">4</span>
                                 <div class="slice">
@@ -203,6 +229,10 @@
                         <td><input type="checkbox" id="elective4" name="elective4" value="elective4">
                             <label style="font-family:muli;" for="course5"> MATH 685: Directed Studies</label><br></td>
                         <td><label style="font-family:muli;" for="course5"> Kamran Reihani</label></td>
+                        <td>
+                          <label style="font-family:muli;" for="course2">Mon, Wed</label><br>
+                          <label style="font-family:muli;" for="course2">08:15 AM - 09:30 AM</label>
+                        </td>
                         <td>
                             <div class="c100 p38 small">
                                 <span class="rating" onclick="location.href='https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1933046&showMyProfs=true.html';">1.9</span>
@@ -231,10 +261,8 @@
 
 
 
-    <div class="row container PreviousButton">
+    <div class="container PreviousButton">
         <input type="submit" value="Save and Exit" />
-
-
     </div>
 
 

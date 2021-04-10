@@ -16,12 +16,24 @@
     position: relative;
   }
 
-  .logo-container {
-    float: left;
+  @media(min-width: 510px){
+    .logo-container{
+      float: left;
+    }
+
+    .navbar-container{
+      float: right;
+    }
   }
 
-  .navbar-container {
-    float: right;
+  @media(max-width: 510px){
+    .logo-container{
+      text-align: center;
+    }
+
+    .navbar-container{
+      text-align: center;
+    }
   }
 
   .navbar li {
@@ -66,12 +78,26 @@
     clear: both;
   }
 
-  .required-links {
-    float: left;
+  @media (min-width: 1024px){
+    .required-links{
+      float: left;
+    }
+
+    .social-block{
+      float: right;
+    }
   }
 
-  .social-block {
-    float: right;
+  @media (max-width: 1024px) {
+    .required-links{
+      float: none;
+      padding-inline-start: 10px;
+    }
+
+    .social-block{
+      float: none;
+      padding-inline-start: 10px;
+    }
   }
 
   .required-links li {
@@ -89,11 +115,6 @@
   .required-links li a:hover {
     color: white;
     border-bottom: 1px solid white;
-  }
-
-  .social-block {
-    float: right;
-    height: 100%;
   }
 
   .social-block li {
@@ -132,12 +153,19 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    /* float: right; */
     font-family: muli;
+    float: right;
   }
 
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+
+  .PreviousButton{
+    position: relative;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .button {
@@ -223,20 +251,6 @@ opacity: 0.2;
     min-height: 100%;
   }
 
-  .PreviousButton{
-    position: relative;
-    display: block;
-  }
-
-  body .overall_background{
-    background-image: url("background2.jpg");
-    background-size: cover;
-    opacity: 0.15;
-    position: absolute;
-    height: 100%;
-    width: 99%;
-  }
-
   #requiredCourses1 {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -256,7 +270,7 @@ opacity: 0.2;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: #166c88;
     color: white;
   }
 
@@ -279,7 +293,7 @@ opacity: 0.2;
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: #4CAF50;
+      background-color: #166c88;
       color: white;
     }
 

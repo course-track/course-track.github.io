@@ -8,273 +8,10 @@
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/previousCourses.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://use.typekit.net/ffy5cmp.css">
   <link rel="stylesheet" href="https://use.typekit.net/gec2ois.css">
-
-
-
-  <style>
-    .container {
-      width: 100%;
-      height: 100%;
-    }
-
-    .btn-file{
-      margin-left: 0.5rem;
-      margin-bottom: 0.2rem;
-    }
-    .container-prev-courselist{
-      display: flex;
-      margin-top: -4rem;
-    }
-
-    header {
-      position: relative;
-    }
-
-    @media(min-width: 510px){
-      .logo-container{
-        float: left;
-      }
-
-      .navbar-container{
-        float: right;
-      }
-    }
-
-    @media(max-width: 510px){
-      .logo-container{
-        text-align: center;
-      }
-
-      .navbar-container{
-        text-align: center;
-      }
-    }
-
-    .navbar li {
-      display: inline-block;
-      list-style: none;
-      margin: 0 1rem 0 0;
-    }
-
-    .navbar li a {
-      color: rgba(0, 0, 0, 0.5);
-      text-decoration: none;
-    }
-
-    .navbar li a:hover {
-      color: #166C88;
-      border-bottom: 2px solid #166C88;
-    }
-
-    .flex-wrapper {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #166C88;
-      /* #7edeff; */
-      width: 100%;
-      padding-bottom: 0.5em;
-      position: relative;
-      display: block;
-      bottom: 0;
-      overflow: hidden;
-    }
-
-    .clearfix:after {
-      content: " ";
-      display: block;
-      height: 0;
-      clear: both;
-    }
-
-    @media (min-width: 1024px){
-      .required-links{
-        float: left;
-      }
-
-      .social-block{
-        float: right;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .required-links{
-        float: none;
-        padding-inline-start: 10px;
-      }
-
-      .social-block{
-        float: none;
-        padding-inline-start: 10px;
-      }
-    }
-
-    .required-links li {
-      display: inline-block;
-      list-style: none;
-      margin: 1rem 1rem 0 0;
-    }
-
-    .required-links li a {
-      /* color: #7edeff; */
-      color: white;
-      text-decoration: none;
-    }
-
-    .required-links li a:hover {
-      color: white;
-      border-bottom: 1px solid white;
-    }
-
-    .social-block li {
-      display: inline-block;
-      list-style: none;
-      margin: 0 0.7rem 0 0;
-    }
-
-    .social-block li a {
-      height: 45px;
-      width: 45px;
-      display: block;
-      color: black;
-      background-color: rgba(126, 222, 255, 0.2);
-      border-radius: 50%;
-      position: relative;
-    }
-
-    .social-block li a span {
-      position: absolute;
-      font-size: 2rem;
-      color: rgba(255, 255, 255, 0.6);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .social-block li a:hover span {
-      color: #fff;
-    }
-
-    input[type=submit] {
-      background-color: green;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      /* float: right; */
-      font-family: muli;
-    }
-
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-
-    .button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-    }
-
-    .adjust-line-height {
-      line-height: 2;
-    }
-
-    h3,
-    h4 {
-      font-weight: normal;
-    }
-
-    .checkboxes {
-      float: left;
-    }
-
-    .upload {
-      float: right;
-    }
-
-    .row {
-      margin-bottom: 60px;
-      text-align: right;
-    }
-
-    #header1{
-      font-family: muli;
-    }
-
-
-    /* .form-page-body {
- background-image: url('page 2/background.jpg');
- background-repeat: no-repeat;
- background-size: 100% 100%;
- opacity: 0.2;
-} */
-    .inputDnD .form-control-file {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      min-height: 15em;
-      outline: none;
-      visibility: hidden;
-      cursor: pointer;
-      background-color: #c61c23;
-      box-shadow: 0 0 5px solid currentColor;
-    }
-
-    .inputDnD .form-control-file:before {
-      content: attr(data-title);
-      position: absolute;
-      left: 0;
-      width: 100%;
-      min-height: 15em;
-      line-height: 2em;
-      padding-top: 1.5em;
-      opacity: 1;
-      background-image: url("upload_icon.png");
-      background-size:80px;
-      background-repeat: no-repeat;
-      background-color: aliceblue;
-      background-position-x: center;
-      background-position-y: center;
-      visibility: visible;
-      text-align: center;
-      border: 2px solid;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      overflow: hidden;
-    }
-
-    .inputDnD .form-control-file:hover:before {
-      border-style: solid;
-      box-shadow: inset 0px 0px 0px 0.25em currentColor;
-    }
-
-    body {
-      background-color: #f7f7f9;
-    }
-
-    .PreviousButton{
-      position: relative;
-      display: block;
-    }
-
-    body .overall_background{
-  background-image: url("background2.jpg");
-  background-size: cover;
-  opacity: 0.15;
-  position: absolute;
-  height: 100%;
-  width: 99%;
-}
-  </style>
-
 </head>
 
 <body>
@@ -287,17 +24,16 @@
         </div>
         <div class="collapse navbar-container" id="nav">
           <ul class="navbar">
-            <li class="nav-item"><a href="#">Search Courses</a></li>
-            <li class="nav-item"><a href="#" target="_blank">Contact Us</a></li>
+            <li class="nav-item"><a href="page 2/form-page.html">Search Courses</a></li>
+            <li class="nav-item"><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
           </ul>
         </div>
       </header>
     </div>
     <div class = "container">
-
     <div class="container-prev-courselist">
 
-        <div class="adjust-line-height col-sm-6">
+        <div class="adjust-line-height col-lg-6 col-md-6 col-sm-12">
 
           <h2>Select all courses taken previously</h2>
           <input type="checkbox" id="course1" name="course1" value="course1">
@@ -306,7 +42,7 @@
             <input type="checkbox" id="course2" name="course2" value="course2">
             <label style="font-family:muli;" for="course2"> ISTM 631: Design and Implementaton of IS Systems</label><br>
             <input type="checkbox" id="course3" name="course3" value="course3">
-            <label style="font-family:muli;" for="course3"> STAT 624 : Big Data tools</label><br>
+            <label style="font-family:muli;" for="course3"> STAT 624: Big Data tools</label><br>
             <input type="checkbox" id="course4" name="course4" value="course4">
             <label style="font-family:muli;" for="course4"> ISTM 628: Data Warehousing</label><br>
             <input type="checkbox" id="course5" name="course5" value="course5">
@@ -319,11 +55,23 @@
             <label style="font-family:muli;" for="course8"> ECEC 742: Digital Circuit Simulation</label><br>
             <input type="checkbox" id="course9" name="course9" value="course9">
             <label style="font-family:muli;" for="course9"> CSCE 672: Analysis of Algorithms</label><br>
+            <input type="checkbox" id="course9" name="course10" value="course10">
+            <label style="font-family:muli;" for="course9"> STAT 650: Statistical Foundations in Data Science</label><br>
+            <input type="checkbox" id="course9" name="course11" value="course11">
+            <label style="font-family:muli;" for="course9"> ISEN 673: Engineering Data Analysis</label><br>
+            <input type="checkbox" id="course9" name="course12" value="course12">
+            <label style="font-family:muli;" for="course9"> STAT 639: Data Mining and Analysis</label><br>
+            <input type="checkbox" id="course9" name="course13" value="course13">
+            <label style="font-family:muli;" for="course9"> ISTM 615: Business Database Systems</label><br>
+            <input type="checkbox" id="course9" name="course14" value="course14">
+            <label style="font-family:muli;" for="course9"> ISTM 620: System Analysis and Design</label><br>
 
         </div>
-        <div class = "col-md-2">
-        <h1><label id="header1">OR</label></h1></div>
-        <div class="col-sm-4" style="margin-bottom: -5px;margin-top: 25px;">
+        <div class = "or_div col-lg-2 col-md-2">
+          <h1><label id="header1">OR</label></h1>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-10 transcript_upload" style="margin-bottom: -5px;margin-top: 25px;">
 
           <!-- <h1><label id="header1">OR</label></h1> <br> -->
 
@@ -331,8 +79,6 @@
             <label style="font-family:muli;font-size:20px">Upload Transcript:</label><br>
             <button type="button" class="btn btn-primary btn-block btn-file"
               onclick="document.getElementById('inputFile').click()">Add file</button>
-
-
 
             <div class="inputDnD">
 
@@ -343,13 +89,9 @@
           </div>
         </div>
       </div>
-
-
-        <div class="row container PreviousButton">
-          <input type="submit" value="Proceed" onclick="location.href='displayCourses.html'"/>
-          <input class="button" type="button" value="Skip" />
-
-        </div>
+      </div>
+      <div class="container PreviousButton">
+        <input type="submit" value="Proceed" onclick="location.href='displayCourses.html'"/>
       </div>
 
     <footer class="footer_section clearfix">

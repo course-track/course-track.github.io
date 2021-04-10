@@ -94,6 +94,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script>
         var video = document.getElementById('background-video');
+        video.playbackRate = 0.7;
         video.addEventListener('ended',function(){
             document.getElementById('landing-slidable').style.display = 'block';
             document.getElementById('background-video').style.display = 'none';
