@@ -6,7 +6,3 @@ h2,h3{
   font-size: 1.5rem;
   font-weight: bold;
 }
-@font-face {
-    font-family: Questa;
-    src: url("../fonts/Questa/2-Questa_Regular.otf") format("opentype");
-}
