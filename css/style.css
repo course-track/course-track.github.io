@@ -468,7 +468,7 @@ input[type=submit]:hover:enabled {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: Verdana;
+    font-family: muli, sans-serif;
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -477,15 +477,6 @@ input[type=submit]:hover:enabled {
 .search-button:hover{
     background-color: #45a049;
 }
-
-/*#progressBar {
-    float: left;
-    position: relative;
-    left: 35%;
-    width: 35%;
-    height: 2%;
-    border-radius: 50%;
-}*/
 
 #progressBar {
     position: relative;
