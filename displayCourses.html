@@ -47,6 +47,7 @@
             <div class="adjust-line-height col-lg-12 col-md-12 col-sm-12">
 
                 <h2>Required Department Courses</h2>
+                <div style="overflow:scroll">
                 <table id="requiredCourses1">
                     <tr>
                         <th>Course</th>
@@ -153,10 +154,12 @@
                                    onclick="window.open('Grades.pdf')">3.8</label></td>
                     </tr>
                 </table>
+                </div>
             </div>
 
             <div class="adjust-line-height col-lg-12 col-md-12 col-sm-12">
                 <h2>Elective Courses</h2>
+                <div style="overflow:scroll">
                 <table id="electiveCourses1">
                     <tr>
                         <th>Course</th>
@@ -246,23 +249,16 @@
                                    onclick="window.open('Grades.pdf')">2.2</label></td>
                     </tr>
                 </table>
-
+                </div>
             </div>
 
 
         </div>
 
-
-
-
     </div>
 
-
-
-
-
     <div class="container PreviousButton">
-        <input type="submit" value="Save and Exit" />
+        <input type="submit" value="Save and Exit" onclick="return clicked()"/>
     </div>
 
 
@@ -284,7 +280,6 @@
 </div>
 
 <script src="js/main.js"></script>
-
 
 </body>
 </html>
