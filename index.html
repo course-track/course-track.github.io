@@ -23,13 +23,13 @@
           <div class="collapse navbar-container" id="nav">
             <ul class="navbar">
               <li class="nav-item"><a href="page 2/form-page.html">Search Courses</a></li>
-              <li class="nav-item"><a href="mailto:coursetrac@gmail.com" target="_blank">Contact Us</a></li>
+              <li class="nav-item"><a href="about_us.html">About Us</a></li>
             </ul>
           </div>
         </header>
       </div>
       <div class="landing-body container">
-          <h2 class="line1" id="line1">
+          <!--<h2 class="line1" id="line1">
             <span class="text-wrapper">
               <span class="letters">
                 Tired of opening countless tabs to find and check details of a course for your program?
@@ -38,23 +38,13 @@
           </h2>
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" class="background-video" id="background-video">
             <source src="background3.mov">
-          </video>
+          </video>-->
           <div class='landing-slidable' id="landing-slidable">
             <div class="line2" id='line2'>
+              <h2>Tired of opening countless tabs to find and check details of a course for your program?<h2>
               <h2>CourseTrack is here to make finding course details easy for you!<h2>
               <h2>With CourseTrack you can:</h2>
             </div>
-            <!--<div class="activity_row">
-              <div class="activity_col1">
-                <img src="list.png" class="icon_line1"></img>
-                <p class="activity_text1">Find a specific courselist for your school, program and semester.</p>
-              </div>
-              <div class="activity_col2">
-                <img src="skills.png" class="icon_line2"></img>
-                <p class="activity_text2">Get a curated courselist by providing details about courses you've previously taken!</p>
-              </div>
-            </div>-->
-
             <table class="activity">
               <tr>
                 <td class="image_col"><img src="list.png" class="icon_line1"></img></td>
@@ -93,14 +83,14 @@
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script>
-        var video = document.getElementById('background-video');
+        /*var video = document.getElementById('background-video');
         video.playbackRate = 0.7;
         video.addEventListener('ended',function(){
             document.getElementById('landing-slidable').style.display = 'block';
             document.getElementById('background-video').style.display = 'none';
             document.getElementById('line1').style.display = 'none';
         });
-        /*var textWrapper = document.querySelector('.line1 .letters');
+        var textWrapper = document.querySelector('.line1 .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
         anime.timeline({loop: false})

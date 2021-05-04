@@ -96,7 +96,6 @@ header{
   position: relative;
   width: 100%;
   height: 50%;
-  display: none;
   animation-name: slide-up;
   animation-duration: 3s;
 }
