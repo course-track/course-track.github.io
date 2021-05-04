@@ -312,6 +312,7 @@ opacity: 0.2;
 
   #goodGrade:hover {
     cursor: pointer;
+    font-size: 30px;
   }
 
 
@@ -329,6 +330,7 @@ opacity: 0.2;
 
   #avgGrade:hover {
     cursor: pointer;
+    font-size: 30px;
   }
 
 
@@ -346,6 +348,7 @@ opacity: 0.2;
 
   #lowGrade:hover {
     cursor: pointer;
+    font-size: 30px;
   }
 
 .rating:hover {
