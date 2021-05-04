@@ -354,3 +354,19 @@ opacity: 0.2;
 .rating:hover {
     cursor: pointer;
 }
+
+.btn {
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius:10px;
+  height: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: RoyalBlue;
+}
+
+
