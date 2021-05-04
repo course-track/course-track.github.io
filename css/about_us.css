@@ -29,6 +29,7 @@ body .overall_background{
 
 header{
   position: relative;
+  z-index: 2;
 }
 
 @media(min-width: 510px){
@@ -146,13 +147,13 @@ header{
 footer {
   text-align: center;
   background-color: #166C88;
-  /* #7edeff; */
   width: 100%;
   padding-bottom: 0.5em;
   position: relative;
   overflow: hidden;
   display: block;
   bottom: 0;
+  z-index: 2;
 }
 
 .clearfix:after {
@@ -233,20 +234,41 @@ footer {
 
 .our_team{
   margin-bottom: 2rem;
+  z-index: 2;
+  background-color: #e5eaf2;
+}
+
+.mission_section::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../graduation2.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  height: 150vh;
+  opacity: 0.5;
 }
 
 .mission_statement{
   height: 90vh;
+  color: black;
+  z-index: 2;
 }
 
 .mission_statement h2{
   margin-top: 5rem;
+  font-weight: 800;
 }
 
 @media(max-width: 480px){
   .mission_statement p{
     font-size: 1rem;
     line-height: 2rem;
+    font-weight: 500;
   }
 
   .problem_section{
@@ -274,13 +296,12 @@ footer {
   .team_member{
     margin-left: 2rem;
   }
-}
 
-@media(max-width: 479px){
   .contact_section h2{
     margin-left: 2rem;
   }
 }
+
 
 @media(max-width: 481px){
   .cellphone,.email{
@@ -293,6 +314,7 @@ footer {
   .mission_statement p{
     font-size: 1.5rem;
     line-height: 3rem;
+    font-weight: 500;
   }
 
   .problem_section{
@@ -321,7 +343,7 @@ footer {
     margin-left: 3rem;
   }
 
-  .contact_section{
+  .contact_section h2{
     margin-left: 3rem;
   }
 }
@@ -331,6 +353,7 @@ footer {
   color: white;
   height: auto;
   display: inline-block;
+  z-index: 2;
 }
 
 .problem_section h2{
@@ -367,6 +390,7 @@ footer {
 .trust_section{
   height: auto;
   display: flex;
+  z-index: 2;
 }
 
 .trust_section .trust_statement{
@@ -446,29 +470,21 @@ footer {
 }
 
 .team_member{
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .contact_section{
   margin-top: 2rem;
+  z-index: 2;
+  background-color: #e5eaf2;
 }
 
 .contact_elements{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media(min-width: 581px){
-  .contact_elements .email{
-    margin-right: 10rem;
-  }
-}
-
-@media(max-width: 580px) and (min-width: 481px){
-  .contact_elements .email{
-    margin-right: 2rem;
-  }
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
 }
 
 .contact_elements .cellphone .icon{
