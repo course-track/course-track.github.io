@@ -20,3 +20,8 @@ function readUrl(input) {
     }
   
   }
+
+function clicked() {
+   alert("Submission Successful!");
+   window.location.href='https://course-track.github.io/';
+}
