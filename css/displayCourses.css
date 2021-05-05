@@ -361,12 +361,10 @@ opacity: 0.2;
   cursor: pointer;
   font-size: 12px;
   border-radius:10px;
-  height: 26px;
+  height: auto;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
   color: RoyalBlue;
 }
-
-
